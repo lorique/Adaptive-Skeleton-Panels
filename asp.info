@@ -1,0 +1,65 @@
+; Adaptive Skeleton Panels is a theme based on skeleton but using panels layouts to control layouts
+
+name = Adaptive Skeleton Panels
+description = Based on the thoughts behind the Skeleton HTML/CSS framework
+version = VERSION
+release = 7.x-1.0-BETA-1
+core = 7.x
+engine      = phptemplate
+screenshot  = screenshot.png
+
+
+;--- Stylesheets ---
+
+stylesheets[all][] = css/skeleton.css
+stylesheets[all][] = css/base.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/system.css
+
+; Unset/Remove Core supplied css. We want a fresh start
+  unset_core[modules/aggregator/aggregator.css]     = 'aggregator.css'
+  unset_core[modules/block/block.css]               = 'block.css'
+  unset_core[modules/book/book.css]                 = 'book.css'
+  unset_core[modules/color/color.css]               = 'color.css'
+  unset_core[modules/comment/comment.css]           = 'comment.css'
+  unset_core[modules/contextual/contextual.css]     = 'contextual.css'
+  unset_core[modules/dashboard/dashboard.css]       = 'dashboard.css'
+  unset_core[modules/dblog/dblog.css]               = 'dblog.css'
+  unset_core[modules/field/theme/field.css]         = 'field.css'
+  unset_core[modules/field_ui/field_ui.css]         = 'field_ui.css'
+  unset_core[modules/file/file.css]                 = 'file.css'
+  unset_core[modules/filter/filter.css]             = 'filter.css'
+  unset_core[modules/forum/forum.css]               = 'forum.css'
+  unset_core[modules/help/help.css]                 = 'help.css'
+  unset_core[modules/image/image.admin.css]         = 'image.admin.css'
+  unset_core[modules/image/image.css]               = 'image.css'
+  unset_core[modules/locale/locale.css]             = 'locale.css'
+  unset_core[modules/menu/menu.css]                 = 'menu.css'
+  unset_core[modules/node/node.css]                 = 'node.css'
+  unset_core[modules/openid/openid.css]             = 'openid.css'
+  unset_core[modules/poll/poll.css]                 = 'poll.css'
+  unset_core[modules/profile/profile.css]           = 'profile.css'
+  unset_core[modules/search/search.css]             = 'search.css'
+  unset_core[modules/shortcut/shortcut.admin.css]   = 'shortcut.admin.css'
+  unset_core[modules/shortcut/shortcut.css]         = 'shortcut.css'
+  unset_core[modules/simpletest/simpletest.css]     = 'simpletest.css'
+  unset_core[modules/system/system.admin.css]       = 'system.admin.css'
+  unset_core[modules/system/system.base.css]        = 'system.base.css'
+  unset_core[modules/system/system.maintenance.css] = 'system.maintenance.css'
+  unset_core[modules/system/system.menus.css]       = 'system.menus.css'
+  unset_core[modules/system/system.messages.css]    = 'system.messages.css'
+  unset_core[modules/system/system.theme.css]       = 'system.theme.css'
+  unset_core[modules/taxonomy/taxonomy.css]         = 'taxonomy.css'
+  unset_core[modules/toolbar/toolbar.css]           = 'toolbar.css'
+  unset_core[modules/tracker/tracker.css]           = 'tracker.css'
+  unset_core[modules/update/update.css]             = 'update.css'
+  unset_core[modules/user/user.css]                 = 'user.css'
+
+;----------// Layout plugins
+
+  ; Page layout plugins
+  ; plugins[page_layout][layouts] = layouts/core
+  
+  ; Panels Module layouts
+  plugins[panels][layouts] = layouts/panels
+  

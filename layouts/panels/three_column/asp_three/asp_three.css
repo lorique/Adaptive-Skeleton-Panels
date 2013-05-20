@@ -1,0 +1,9 @@
+#panels-dnd-main .four.columns {
+  width: 25%;
+  float: left;
+}
+
+#panels-dnd-main .eight.columns {
+  width: 50%;
+  float: left;
+}

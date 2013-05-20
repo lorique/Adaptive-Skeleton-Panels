@@ -58,8 +58,8 @@ stylesheets[all][] = css/system.css
 ;----------// Layout plugins
 
   ; Page layout plugins
-  ; plugins[page_layout][layouts] = layouts/core
-  
+  plugins[page_layout][layouts] = layouts/page
+
   ; Panels Module layouts
   plugins[panels][layouts] = layouts/panels
-  
+

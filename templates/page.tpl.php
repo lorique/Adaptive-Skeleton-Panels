@@ -1,5 +1,5 @@
 <div id="wrap">
     <div class="container">
-			<?php print $page['content']; ?>
+			<?php print render($page['content']); ?>
     </div>
 </div> <!-- /#wrap -->

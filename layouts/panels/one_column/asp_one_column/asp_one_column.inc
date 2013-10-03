@@ -9,7 +9,7 @@ $plugin = array(
   'category' => t('Adaptive Skeleton Panels'),
   'icon' => 'asp_one_column.png',
   'theme' => 'asp-one-column',
-  'css' => 'asp_one_column.css',
+  'css' => 'asp-one-column.css',
   'regions' => array(
 		'column_first' => t('First column'),
 	),

@@ -1,5 +1,7 @@
 <div id="wrap">
-    <div class="container">
-			<?php print render($page['content']); ?>
-    </div>
-</div> <!-- /#wrap -->
+  <div class="container">
+    <?php print $content; ?>
+  </div>
+</div>
+<?php print $footer; ?>
+<!-- /#wrap -->

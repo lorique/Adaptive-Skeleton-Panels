@@ -40,39 +40,3 @@ function asp_page_alter($page) {
   );
   drupal_add_html_head($viewport, 'viewport');
 }
-
-/**
- *  @see theme_panels_everywhere_page();
- */
-function asp_panels_everywhere_page($vars) {
-  $page = &$vars['page'];
-  $task = page_manager_get_task('site_template');
-
-  $content = new stdClass();
-  $content->title = drupal_get_title();
-  $content->content = isset($page['content']) ? $page['content'] : '';
-
-  $args = array($content);
-  $contexts = ctools_context_handler_get_task_contexts($task, '', $args);
-
-  // @todo -- we need a way to insert the page content into the panel
-  // if for some reason they left out the page content pane.
-    $info = ctools_context_handler_render_handler($task, '', $page['#handler'], $contexts, $args, FALSE);
-
-  return theme('page_panels_everywhere', array('page' => $page, 'info' => $info));
-}
-
-/**
- *  @see hook_theme()
- */
-function asp_theme($existing, $type, $theme, $path) {
-  $theme = array();
-
-  $theme['page_panels_everywhere'] = array(
-    'template' => 'page-panels-everywhere',
-    'variables' => array('page' => NULL, 'info' => NULL),
-    'path' => $path.'/templates',
-  );
-
-  return $theme;
-}
